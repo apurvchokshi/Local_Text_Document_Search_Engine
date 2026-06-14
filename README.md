@@ -4,7 +4,6 @@ An interactive local document search engine built using Information Retrieval te
 
 [![Hugging Face Space](https://img.shields.io/badge/🤗%20Hugging%20Face-Space-yellow?style=flat-square)](https://huggingface.co/spaces/apurv20/Local_Document_Search_Engine)
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
-[![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)](LICENSE)
 
 ---
 
@@ -27,6 +26,7 @@ An interactive local document search engine built using Information Retrieval te
 - [Evaluation Metrics](#-evaluation-metrics)
 - [Method Comparison](#-method-comparison)
 - [Deployment](#-deployment)
+- [Jupyter Notebook](#-jupyter-notebook)
 - [Future Improvements](#-future-improvements)
 - [Author](#-author)
 
@@ -107,7 +107,7 @@ The app uses the **20 Newsgroups dataset** as the document collection and provid
 |------|---------|
 | `app.py` | Main Gradio application with UI and search logic |
 | `requirements.txt` | Python dependencies |
-| `Interactive_Local_Text_Document_Search_Engine_DEPLOYMENT_READY.ipynb` | Jupyter notebook: development, indexing, evaluation, deployment |
+| `Interactive_Local_Text_Document_Search_Engine_DEPLOYMENT_READY.ipynb` | 📓 Full development notebook (see [Jupyter Notebook](#-jupyter-notebook) section) |
 | `README.md` | Project documentation |
 | `search_engine_index.pkl` | Precomputed search index (used in deployment) |
 
@@ -241,6 +241,26 @@ This file contains:
 
 ---
 
+## 📓 Jupyter Notebook
+
+The repository includes a comprehensive Jupyter notebook: **`Interactive_Local_Text_Document_Search_Engine_DEPLOYMENT_READY.ipynb`**
+
+### What's Covered:
+
+1. **Data Loading & Preprocessing** - Loading the 20 Newsgroups dataset, text cleaning and tokenization
+2. **Index Building** - TF-IDF vectorization, semantic embedding computation
+3. **Search Implementation** - TF-IDF, semantic, hybrid, and query expansion search logic
+4. **Evaluation** - Category-based relevance, metric calculation, performance analysis
+5. **Deployment Export** - Saving precomputed indexes for fast deployment
+
+### How to Use:
+- **View**: Open in Jupyter Notebook or Jupyter Lab
+- **Run in Colab**: Execute in Google Colab for cloud computing
+- **Learn**: Study the code to understand the full implementation
+- **Experiment**: Modify parameters and test different approaches
+
+---
+
 ## 🔮 Future Improvements
 
 - [ ] User-uploaded document support (drag & drop)
@@ -263,12 +283,6 @@ This file contains:
 - [20 Newsgroups Dataset](http://qwone.com/~jason/20Newsgroups/)
 - [Gradio](https://gradio.app/)
 - [Hugging Face](https://huggingface.co/)
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
